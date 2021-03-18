@@ -22,7 +22,8 @@ public class NewTest {
 		@BeforeTest
 		public void beforeTest() {	
 			// Set the driver path
-	        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+	        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
 		    driver = new ChromeDriver();  
 		}		
 		@AfterTest
