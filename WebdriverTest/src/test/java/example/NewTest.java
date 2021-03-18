@@ -26,7 +26,6 @@ public class NewTest {
 //			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("headless");
-//          options.addArguments("window-size=1200x600");
 			driver = new ChromeDriver(options);  
 		}		
 		@AfterTest
