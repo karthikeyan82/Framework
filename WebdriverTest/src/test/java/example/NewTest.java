@@ -17,7 +17,7 @@ public class NewTest {
 		public void testEasy() {	
 			driver.get("https://www.google.com/");  
 			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("Google1")); 		
+			Assert.assertTrue(title.contains("Google")); 		
 		}	
 		@BeforeTest
 		public void beforeTest() {	
