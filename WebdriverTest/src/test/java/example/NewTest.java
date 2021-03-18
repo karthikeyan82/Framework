@@ -24,7 +24,10 @@ public class NewTest {
 			// Set the driver path
 	        System.setProperty("webdriver.chrome.driver", "/apps/pega/chromedriver");
 //			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
-		    driver = new ChromeDriver();  
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            options.addArguments("window-size=1200x600");
+			driver = new ChromeDriver(options);  
 		}		
 		@AfterTest
 		public void afterTest() {
