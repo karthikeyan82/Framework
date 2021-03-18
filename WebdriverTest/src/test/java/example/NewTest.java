@@ -22,7 +22,7 @@ public class NewTest {
 		@BeforeTest
 		public void beforeTest() {	
 			// Set the driver path
-	        System.setProperty("webdriver.chrome.driver", "chromedriver.sh");
+	        System.setProperty("webdriver.chrome.driver", "/apps/pega/chromedriver");
 //			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
 		    driver = new ChromeDriver();  
 		}		
