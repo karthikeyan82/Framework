@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="example.firefox">
+      <class name="example.NewTest">
         <methods>
+          <include name="testEasy"/>
           <include name="beforeTest"/>
-          <include name="testEasy1"/>
         </methods>
-      </class> <!-- example.firefox -->
+      </class> <!-- example.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
