@@ -15,9 +15,9 @@ public class NewTest {
 	    private WebDriver driver;		
 		@Test				
 		public void testEasy() {	
-			driver.get("http://demo.guru99.com/test/guru99home/");  
+			driver.get("https://www.google.com/");  
 			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+			Assert.assertTrue(title.contains("Google")); 		
 		}	
 		@BeforeTest
 		public void beforeTest() {	
@@ -26,7 +26,7 @@ public class NewTest {
 //			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("headless");
-            options.addArguments("window-size=1200x600");
+//          options.addArguments("window-size=1200x600");
 			driver = new ChromeDriver(options);  
 		}		
 		@AfterTest
